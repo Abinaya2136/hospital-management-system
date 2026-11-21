@@ -1,0 +1,201 @@
+appointment_id,patient_id,doctor_id,appointment_date,appointment_time,reason_for_visit,status
+A001,P046,D005,2026-04-19,17:15,Skin Allergy,Scheduled
+A002,P008,D004,2026-07-11,16:45,Diabetes Follow-up,Completed
+A003,P038,D004,2026-02-02,14:00,Consultation,Scheduled
+A004,P046,D001,2026-04-23,09:00,Diabetes Follow-up,Completed
+A005,P005,D004,2026-02-04,09:30,Blood Pressure,Cancelled
+A006,P047,D008,2026-09-06,12:15,Diabetes Follow-up,Cancelled
+A007,P007,D002,2026-08-31,15:15,Skin Allergy,No-show
+A008,P030,D001,2026-07-01,15:45,Fever,No-show
+A009,P052,D002,2026-02-01,15:30,Diabetes Follow-up,Scheduled
+A010,P009,D007,2026-04-09,12:45,Headache,No-show
+A011,P056,D002,2026-05-23,16:15,Stomach Pain,Cancelled
+A012,P042,D001,2026-10-09,10:00,Fever,Completed
+A013,P032,D008,2026-05-02,11:45,Diabetes Follow-up,Cancelled
+A014,P025,D001,2026-07-25,09:15,Skin Allergy,Scheduled
+A015,P028,D008,2026-05-16,16:30,Headache,Completed
+A016,P004,D001,2026-04-08,13:15,Dental Pain,Completed
+A017,P033,D003,2026-01-30,09:45,General Checkup,No-show
+A018,P005,D002,2026-09-18,10:15,Diabetes Follow-up,Cancelled
+A019,P038,D001,2026-07-26,10:15,Consultation,No-show
+A020,P060,D005,2026-02-11,15:30,Diabetes Follow-up,No-show
+A021,P026,D003,2026-06-10,12:30,Blood Pressure,Completed
+A022,P001,D008,2026-08-23,14:00,Consultation,No-show
+A023,P035,D004,2026-10-16,10:00,Back Pain,No-show
+A024,P057,D002,2026-05-16,11:30,Diabetes Follow-up,Cancelled
+A025,P029,D005,2026-07-09,13:15,Consultation,Completed
+A026,P060,D002,2026-09-28,09:30,Headache,Completed
+A027,P048,D003,2026-05-16,10:00,Blood Pressure,No-show
+A028,P014,D005,2026-05-25,12:30,Back Pain,Cancelled
+A029,P006,D007,2026-09-08,13:00,Blood Pressure,No-show
+A030,P050,D003,2026-01-23,09:30,Blood Pressure,Completed
+A031,P036,D001,2026-03-24,16:45,Fever,No-show
+A032,P054,D006,2026-02-08,11:00,Consultation,Cancelled
+A033,P009,D001,2026-10-10,11:45,Blood Pressure,No-show
+A034,P014,D004,2026-07-06,09:30,Fever,No-show
+A035,P040,D003,2026-07-01,17:45,Diabetes Follow-up,Cancelled
+A036,P002,D003,2026-03-25,11:45,Dental Pain,Scheduled
+A037,P011,D002,2026-07-30,12:30,Skin Allergy,Scheduled
+A038,P013,D008,2026-01-20,16:15,Dental Pain,Completed
+A039,P002,D004,2026-06-06,12:15,Skin Allergy,No-show
+A040,P050,D005,2026-06-18,13:00,Dental Pain,Completed
+A041,P002,D002,2026-09-18,15:30,Blood Pressure,Completed
+A042,P007,D007,2026-04-02,13:00,Dental Pain,Scheduled
+A043,P025,D004,2026-06-10,15:00,Blood Pressure,No-show
+A044,P034,D004,2026-01-23,15:00,Dental Pain,Cancelled
+A045,P040,D006,2026-08-09,10:30,Fever,Completed
+A046,P043,D007,2026-06-03,17:30,Dental Pain,Scheduled
+A047,P013,D007,2026-07-26,13:15,Skin Allergy,Cancelled
+A048,P036,D001,2026-03-31,13:45,Blood Pressure,Cancelled
+A049,P051,D006,2026-05-27,12:45,Stomach Pain,Scheduled
+A050,P033,D008,2026-08-15,16:15,Headache,Cancelled
+A051,P006,D004,2026-02-13,13:30,Blood Pressure,Cancelled
+A052,P002,D001,2026-04-26,12:15,Diabetes Follow-up,Scheduled
+A053,P027,D004,2026-09-01,10:45,Skin Allergy,Cancelled
+A054,P010,D001,2026-09-11,15:15,Fever,Cancelled
+A055,P052,D008,2026-08-06,12:15,General Checkup,No-show
+A056,P030,D003,2026-10-13,12:00,Stomach Pain,No-show
+A057,P049,D008,2026-09-29,17:30,Consultation,Completed
+A058,P058,D003,2026-09-16,15:45,Stomach Pain,Completed
+A059,P054,D005,2026-08-19,13:15,Back Pain,No-show
+A060,P029,D002,2026-09-06,12:30,Blood Pressure,Scheduled
+A061,P021,D002,2026-05-01,13:30,Headache,Scheduled
+A062,P045,D003,2026-03-19,12:45,Diabetes Follow-up,No-show
+A063,P022,D008,2026-02-02,15:45,Skin Allergy,Completed
+A064,P025,D001,2026-02-01,12:45,Consultation,Completed
+A065,P023,D005,2026-07-14,16:00,Skin Allergy,Cancelled
+A066,P032,D004,2026-08-03,17:15,Blood Pressure,Scheduled
+A067,P025,D006,2026-08-12,16:00,Skin Allergy,Cancelled
+A068,P040,D001,2026-03-26,16:15,Skin Allergy,No-show
+A069,P042,D007,2026-10-16,09:00,Headache,No-show
+A070,P017,D007,2026-08-25,11:00,Dental Pain,Completed
+A071,P022,D007,2026-04-19,16:30,Blood Pressure,Cancelled
+A072,P031,D001,2026-08-04,13:00,Back Pain,Completed
+A073,P042,D002,2026-01-27,14:15,General Checkup,Scheduled
+A074,P054,D001,2026-01-16,12:15,Consultation,Scheduled
+A075,P031,D002,2026-03-20,12:15,Consultation,Completed
+A076,P050,D006,2026-04-22,16:30,Headache,No-show
+A077,P007,D001,2026-02-28,11:30,Blood Pressure,Cancelled
+A078,P046,D004,2026-10-22,15:45,Fever,Scheduled
+A079,P055,D002,2026-05-05,10:30,Consultation,Scheduled
+A080,P043,D006,2026-01-22,14:45,Fever,Completed
+A081,P055,D007,2026-09-17,14:00,Stomach Pain,Scheduled
+A082,P041,D008,2026-02-24,15:30,Headache,Cancelled
+A083,P040,D008,2026-08-11,11:30,Stomach Pain,Cancelled
+A084,P055,D004,2026-08-12,13:30,Fever,Cancelled
+A085,P049,D008,2026-05-23,16:15,Consultation,Cancelled
+A086,P032,D006,2026-07-14,14:00,Headache,No-show
+A087,P052,D005,2026-09-07,12:30,Dental Pain,No-show
+A088,P034,D004,2026-05-24,13:00,Fever,Cancelled
+A089,P036,D004,2026-05-04,15:45,Stomach Pain,Cancelled
+A090,P006,D005,2026-09-09,16:00,Diabetes Follow-up,Completed
+A091,P043,D006,2026-07-27,12:30,Stomach Pain,Scheduled
+A092,P028,D006,2026-10-11,17:30,Dental Pain,Scheduled
+A093,P017,D004,2026-08-21,13:30,Fever,Cancelled
+A094,P048,D003,2026-04-09,14:00,Diabetes Follow-up,Scheduled
+A095,P047,D005,2026-04-21,16:30,Fever,Completed
+A096,P024,D003,2026-04-10,13:15,Blood Pressure,Scheduled
+A097,P018,D001,2026-01-08,17:15,General Checkup,No-show
+A098,P041,D008,2026-10-11,13:15,Fever,Completed
+A099,P031,D008,2026-01-07,13:45,Dental Pain,Cancelled
+A100,P056,D008,2026-04-05,09:30,Fever,No-show
+A101,P005,D001,2026-02-03,15:45,Headache,Completed
+A102,P016,D002,2026-03-18,13:00,Back Pain,No-show
+A103,P029,D008,2026-08-02,12:45,Blood Pressure,No-show
+A104,P040,D002,2026-08-08,13:00,Diabetes Follow-up,Completed
+A105,P011,D004,2026-04-19,13:00,Headache,Scheduled
+A106,P001,D007,2026-10-10,10:15,Stomach Pain,Scheduled
+A107,P015,D005,2026-08-29,13:00,Blood Pressure,Cancelled
+A108,P060,D005,2026-08-21,10:15,Consultation,Cancelled
+A109,P035,D004,2026-04-12,15:00,Headache,Completed
+A110,P004,D003,2026-05-17,11:00,Blood Pressure,Cancelled
+A111,P008,D008,2026-10-19,13:45,Blood Pressure,Completed
+A112,P029,D002,2026-07-26,13:45,Consultation,Cancelled
+A113,P039,D005,2026-01-21,15:30,General Checkup,No-show
+A114,P049,D005,2026-02-16,12:00,Consultation,No-show
+A115,P034,D008,2026-01-21,11:45,Blood Pressure,Completed
+A116,P006,D008,2026-04-03,15:45,Dental Pain,Cancelled
+A117,P043,D002,2026-07-29,14:30,Headache,Cancelled
+A118,P019,D007,2026-06-18,15:45,Back Pain,Cancelled
+A119,P021,D005,2026-01-19,16:00,Dental Pain,Cancelled
+A120,P043,D008,2026-03-01,15:00,Skin Allergy,No-show
+A121,P040,D008,2026-01-28,12:30,Stomach Pain,Scheduled
+A122,P036,D003,2026-01-27,12:30,Blood Pressure,Scheduled
+A123,P002,D004,2026-08-13,16:00,Headache,No-show
+A124,P036,D007,2026-06-09,17:00,Fever,Scheduled
+A125,P008,D003,2026-04-26,10:45,Stomach Pain,Completed
+A126,P027,D008,2026-05-30,17:30,Stomach Pain,Cancelled
+A127,P025,D004,2026-05-05,16:15,Consultation,Scheduled
+A128,P018,D007,2026-09-18,11:00,Dental Pain,Scheduled
+A129,P019,D005,2026-09-17,13:00,Consultation,Scheduled
+A130,P029,D008,2026-10-24,16:15,Dental Pain,Scheduled
+A131,P030,D006,2026-06-20,17:45,Diabetes Follow-up,Scheduled
+A132,P055,D007,2026-05-03,15:15,General Checkup,No-show
+A133,P025,D003,2026-06-12,16:45,Stomach Pain,Scheduled
+A134,P056,D002,2026-01-19,11:30,Stomach Pain,Cancelled
+A135,P001,D003,2026-02-21,17:45,Skin Allergy,Completed
+A136,P051,D005,2026-03-21,10:45,Dental Pain,Completed
+A137,P055,D007,2026-07-23,10:30,Dental Pain,No-show
+A138,P040,D002,2026-09-07,17:00,Diabetes Follow-up,Completed
+A139,P028,D002,2026-05-28,12:00,Fever,Cancelled
+A140,P058,D001,2026-08-16,11:30,General Checkup,Scheduled
+A141,P023,D006,2026-06-16,09:30,Skin Allergy,Scheduled
+A142,P037,D003,2026-03-16,12:45,Headache,Cancelled
+A143,P040,D004,2026-03-31,10:45,Stomach Pain,No-show
+A144,P030,D005,2026-10-26,11:15,Stomach Pain,No-show
+A145,P058,D005,2026-05-11,09:45,Back Pain,Scheduled
+A146,P023,D005,2026-03-22,10:45,Skin Allergy,Scheduled
+A147,P013,D007,2026-05-09,16:30,Stomach Pain,Cancelled
+A148,P037,D006,2026-02-24,12:45,Consultation,No-show
+A149,P054,D007,2026-06-01,13:00,Blood Pressure,Scheduled
+A150,P054,D005,2026-01-05,09:45,Diabetes Follow-up,No-show
+A151,P040,D005,2026-06-30,12:15,Headache,Cancelled
+A152,P051,D008,2026-02-19,09:30,General Checkup,Cancelled
+A153,P006,D005,2026-10-24,14:15,Dental Pain,No-show
+A154,P009,D006,2026-08-01,11:15,Back Pain,Scheduled
+A155,P017,D008,2026-09-14,13:15,Blood Pressure,Scheduled
+A156,P005,D003,2026-06-23,10:45,Diabetes Follow-up,Scheduled
+A157,P006,D007,2026-07-23,17:30,General Checkup,No-show
+A158,P030,D006,2026-05-16,17:00,Blood Pressure,Scheduled
+A159,P007,D004,2026-10-27,15:30,Stomach Pain,Completed
+A160,P059,D004,2026-01-13,17:30,Fever,Completed
+A161,P008,D003,2026-08-26,13:45,General Checkup,Scheduled
+A162,P008,D002,2026-01-20,13:45,Diabetes Follow-up,Completed
+A163,P030,D006,2026-10-03,11:45,Back Pain,No-show
+A164,P042,D002,2026-08-03,11:45,Stomach Pain,Completed
+A165,P045,D006,2026-07-28,13:00,Diabetes Follow-up,Scheduled
+A166,P055,D006,2026-08-16,16:15,Fever,Completed
+A167,P004,D007,2026-07-08,17:30,Blood Pressure,No-show
+A168,P006,D004,2026-04-08,10:45,Consultation,No-show
+A169,P016,D003,2026-01-11,09:30,Consultation,Scheduled
+A170,P038,D004,2026-04-16,10:15,Diabetes Follow-up,Cancelled
+A171,P018,D003,2026-06-18,11:00,Headache,Cancelled
+A172,P008,D001,2026-10-04,13:15,Headache,Scheduled
+A173,P038,D006,2026-01-08,14:15,General Checkup,Cancelled
+A174,P009,D007,2026-03-31,13:00,Back Pain,Completed
+A175,P029,D006,2026-02-28,10:45,Back Pain,Completed
+A176,P040,D001,2026-02-25,16:15,Back Pain,No-show
+A177,P004,D008,2026-06-04,16:00,Skin Allergy,Cancelled
+A178,P046,D008,2026-08-07,10:45,Fever,Completed
+A179,P005,D003,2026-02-11,14:15,Blood Pressure,Completed
+A180,P025,D005,2026-10-27,17:30,Stomach Pain,Cancelled
+A181,P051,D002,2026-09-16,15:00,Back Pain,Scheduled
+A182,P057,D004,2026-04-21,15:45,Skin Allergy,Scheduled
+A183,P027,D002,2026-06-23,16:45,Dental Pain,No-show
+A184,P024,D003,2026-08-07,14:30,Stomach Pain,No-show
+A185,P006,D007,2026-02-04,10:00,Fever,No-show
+A186,P038,D006,2026-07-10,11:00,Fever,Cancelled
+A187,P056,D001,2026-07-30,14:45,Blood Pressure,Cancelled
+A188,P037,D004,2026-06-09,14:00,Headache,No-show
+A189,P023,D006,2026-09-04,12:00,Fever,Cancelled
+A190,P055,D001,2026-05-23,12:45,Consultation,Completed
+A191,P018,D005,2026-05-17,09:15,Dental Pain,No-show
+A192,P056,D003,2026-06-29,09:15,Consultation,Completed
+A193,P048,D001,2026-07-25,10:15,Fever,No-show
+A194,P027,D008,2026-09-29,12:45,Dental Pain,Scheduled
+A195,P047,D006,2026-03-22,14:30,Consultation,Scheduled
+A196,P011,D001,2026-02-13,09:15,Fever,Scheduled
+A197,P032,D008,2026-05-20,16:45,Skin Allergy,Completed
+A198,P023,D007,2026-05-20,12:00,Fever,No-show
+A199,P003,D004,2026-05-26,16:30,Skin Allergy,No-show
+A200,P020,D004,2026-01-29,09:15,Headache,Completed

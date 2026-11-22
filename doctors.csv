@@ -1,1 +1,11 @@
 doctor_id,doctor_name,specialization,phone,availability
+D001,Dr. Arun,Cardiology,9000000001,Available
+D002,Dr. Priya,Dermatology,9000000002,Available
+D003,Dr. Kumar,Neurology,9000000003,Available
+D004,Dr. Divya,Pediatrics,9000000004,Available
+D005,Dr. Raj,Orthopedics,9000000005,Available
+D006,Dr. Meena,Gynecology,9000000006,Available
+D007,Dr. Suresh,General Medicine,9000000007,Available
+D008,Dr. Nisha,ENT,9000000008,Available
+D009,Dr. Karthik,Dentistry,9000000009,Available
+D010,Dr. Anitha,Emergency Medicine,9000000010,Available

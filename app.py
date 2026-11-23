@@ -80,7 +80,36 @@ def add_patient(name, age, gender, phone, address):
     data.loc[len(data)] = row
     save_data(data, PF)
     return f"Patient added successfully. Patient ID: {pid}", get_patients()
+      
 
+# UPDATE PATIENT
+def update_patient(patient_id, name, age, gender, phone, address):
+    data = get_patients()
+
+    if str(patient_id) not in data["patient_id"].astype(str).values:
+        return "Patient ID not found.", data
+
+    idx = data.index[data["patient_id"].astype(str) == str(patient_id)][0]
+
+    data.loc[idx, ["patient_name", "age", "gender", "phone", "address"]] = [
+        name, age, gender, phone, address
+    ]
+
+    save_data(data, PF)
+    return "Patient updated successfully!", get_patients()
+
+
+# DELETE PATIENT
+def delete_patient(patient_id):
+    data = get_patients()
+
+    if str(patient_id) not in data["patient_id"].astype(str).values:
+        return "Patient ID not found.", data
+
+    data = data[data["patient_id"].astype(str) != str(patient_id)]
+    save_data(data, PF)
+
+    return "Patient deleted successfully!", get_patients()
 
 def find_patients(query):
     data = get_patients()
@@ -260,6 +289,33 @@ with gr.Blocks(title="Hospital Management System", theme=gr.themes.Soft()) as de
                 add_patient,
                 inputs=[patient_name, patient_age, patient_gender,
                         patient_phone, patient_address],
+                outputs=[patient_message, patient_table]
+            )
+              
+            gr.Markdown("## Update Patient")
+            update_id = gr.Textbox(label="Patient ID")
+            update_name = gr.Textbox(label="Patient Name")
+            update_age = gr.Number(label="Age", precision=0)
+            update_gender = gr.Dropdown(
+                ["Male", "Female", "Other"], label="Gender"
+            )
+            update_phone = gr.Textbox(label="Phone")
+            update_address = gr.Textbox(label="Address")
+
+            update_btn = gr.Button("Update Patient")
+            update_btn.click(
+                update_patient,
+                inputs=[update_id, update_name, update_age,
+                        update_gender, update_phone, update_address],
+                outputs=[patient_message, patient_table]
+            )
+
+            gr.Markdown("## Delete Patient")
+            delete_id = gr.Textbox(label="Patient ID")
+            delete_btn = gr.Button("Delete Patient")
+            delete_btn.click(
+                delete_patient,
+                inputs=delete_id,
                 outputs=[patient_message, patient_table]
             )
 

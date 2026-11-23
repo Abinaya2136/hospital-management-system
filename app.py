@@ -93,3 +93,7 @@ def update(aid,status):
     if aid not in df.appointment_id.values: return 'Appointment ID not found.',df
     df.loc[df.appointment_id==aid,'status']=status; save(df,AF)
     return f'{aid} updated successfully.',df
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 10000))
+)

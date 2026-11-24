@@ -213,44 +213,124 @@ def dashboard():
 
 
 # -------------------- MACHINE LEARNING DEMO --------------------
+
 def ml_demo():
     data = get_appointments()
-    if len(data) < 10:
-        return "Add at least 10 appointments to try the ML demo."
 
-    # This is a simple demonstration using appointment details to predict status.
-    features = data[["reason_for_visit", "doctor_id"]].fillna("")
-    target = data["status"].fillna("Scheduled")
-
-    if target.nunique() < 2:
-        return "ML demo needs at least two different appointment statuses."
+    if len(data) < 20:
+        return "Please add at least 20 appointments."
 
     try:
+        import pandas as pd
         from sklearn.compose import ColumnTransformer
         from sklearn.preprocessing import OneHotEncoder
         from sklearn.pipeline import Pipeline
         from sklearn.model_selection import train_test_split
         from sklearn.ensemble import RandomForestClassifier
+        from sklearn.dummy import DummyClassifier
         from sklearn.metrics import accuracy_score
 
+        # Prepare data
+        data = data.dropna(subset=["status"]).copy()
+
+        # Extract date features
+        date = pd.to_datetime(
+            data["appointment_date"], errors="coerce"
+        )
+
+        data["month"] = date.dt.month
+        data["day"] = date.dt.dayofweek
+
+        # Extract appointment hour
+        time = pd.to_datetime(
+            data["appointment_time"], format="mixed", errors="coerce"
+        )
+
+        data["hour"] = time.dt.hour
+
+        # Select input features
+        features = data[
+            ["doctor_id", "reason_for_visit",
+             "month", "day", "hour"]
+        ].copy()
+
+        features["doctor_id"] = features[
+            "doctor_id"
+        ].fillna("Unknown").astype(str)
+
+        features["reason_for_visit"] = features[
+            "reason_for_visit"
+        ].fillna("Unknown").astype(str)
+
+        features[["month", "day", "hour"]] = features[
+            ["month", "day", "hour"]
+        ].fillna(0)
+
+        target = data["status"].astype(str)
+
+        if target.nunique() < 2:
+            return "At least two different statuses are required."
+
+        # Preprocessing
+        categorical = ["doctor_id", "reason_for_visit"]
+        numerical = ["month", "day", "hour"]
+
         transformer = ColumnTransformer([
-            ("categorical", OneHotEncoder(handle_unknown="ignore"),
-             ["reason_for_visit", "doctor_id"])
-        ])
-        model = Pipeline([
-            ("transform", transformer),
-            ("classifier", RandomForestClassifier(n_estimators=100, random_state=42))
+            ("categorical",
+             OneHotEncoder(handle_unknown="ignore"),
+             categorical),
+            ("numerical", "passthrough", numerical)
         ])
 
-        stratify = target if target.value_counts().min() >= 2 else None
+        # Random Forest model
+        model = Pipeline([
+            ("preprocessing", transformer),
+            ("classifier", RandomForestClassifier(
+                n_estimators=200,
+                random_state=42,
+                class_weight="balanced"
+            ))
+        ])
+
+        # Split training and testing data
         x_train, x_test, y_train, y_test = train_test_split(
-            features, target, test_size=0.25, random_state=42, stratify=stratify
+            features,
+            target,
+            test_size=0.25,
+            random_state=42,
+            stratify=target
         )
+
+        # Train model
         model.fit(x_train, y_train)
-        accuracy = accuracy_score(y_test, model.predict(x_test))
-        return f"Random Forest model trained successfully. Test accuracy: {accuracy:.2%}"
+
+        # Predict results
+        predictions = model.predict(x_test)
+
+        accuracy = accuracy_score(y_test, predictions)
+
+        # Baseline comparison
+        baseline = DummyClassifier(strategy="most_frequent")
+        baseline.fit(x_train, y_train)
+
+        baseline_predictions = baseline.predict(x_test)
+
+        baseline_accuracy = accuracy_score(
+            y_test, baseline_predictions
+        )
+
+        return (
+            "Random Forest Model Trained Successfully!\n\n"
+            f"Test Accuracy: {accuracy:.2%}\n"
+            f"Baseline Accuracy: {baseline_accuracy:.2%}\n\n"
+            "Algorithm: Random Forest\n"
+            "Features: Doctor ID, Visit Reason, Month, "
+            "Day and Appointment Time"
+        )
+
     except Exception as error:
-        return f"ML demo could not run: {error}"
+        return f"ML Error: {error}"
+
 
 
 # -------------------- GRADIO USER INTERFACE --------------------
